@@ -1,3 +1,15 @@
+この repository は、`nerves_system_rpi4` をもとに、Raspberry Pi 4 で DSI 表示装置や映像まわりを扱いやすくするために調整した Nerves システムです。
+
+DSI 表示装置の利用、Scenic による画面描画、RTSP カメラ映像の表示、MP4 再生、DRM/KMS の検証に必要な変更を加えています。
+
+主な変更点は、次の文書にまとめています。
+
+- [Raspberry Pi 4 向け DSI 表示対応 Nerves システムのカスタマイズ概要](https://github.com/piyopiyoex/nerves_system_rpi4_dsi_media/blob/main/docs/nerves-system-customization-details.md)
+
+対応するOTPバージョンについては[公式ドキュメント](https://nerves.hexdocs.pm/systems.html#compatibility) を参照。
+
+以下は、もとの `nerves_system_rpi4` の README です。
+
 # Raspberry Pi 4 Model B (64-bit)
 
 [![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi4.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi4)
@@ -176,4 +188,3 @@ take versions of the repositories that have similar commit times.
 The Linux kernel compiled for Nerves is a stripped down version of the default
 Raspberry Pi Linux kernel. This is done to remove unnecessary features, select
 some Nerves-specific features like F2FS and SquashFS support, and to save space.
-
